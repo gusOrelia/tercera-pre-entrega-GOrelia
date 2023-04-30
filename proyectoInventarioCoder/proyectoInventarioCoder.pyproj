@@ -1,0 +1,118 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>proyectoInventarioCoder</Name>
+    <RootNamespace>proyectoInventarioCoder</RootNamespace>
+    <InterpreterId>MSBuild|envProyCoder|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>ec0901a0-e69d-473c-b745-a5ea6eb7808d</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>proyectoInventarioCoder.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="appInventario\admin.py" />
+    <Compile Include="appInventario\apps.py" />
+    <Compile Include="appInventario\migrations\__init__.py" />
+    <Compile Include="appInventario\models.py" />
+    <Compile Include="appInventario\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="appInventario\tests.py" />
+    <Compile Include="appInventario\views.py" />
+    <Compile Include="appInventario\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="proyectoInventarioCoder\__init__.py" />
+    <Compile Include="proyectoInventarioCoder\settings.py" />
+    <Compile Include="proyectoInventarioCoder\urls.py" />
+    <Compile Include="proyectoInventarioCoder\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appInventario\static\css\estiloPagPrinc.css" />
+    <Content Include="appInventario\static\css\bootstrap.min.css" />
+    <Content Include="appInventario\templates\appInventario\paginaPadre.html" />
+    <Content Include="appInventario\templates\appInventario\Inicio.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="appInventario\" />
+    <Folder Include="appInventario\migrations\" />
+    <Folder Include="appInventario\static\" />
+    <Folder Include="appInventario\static\css\" />
+    <Folder Include="appInventario\static\js\" />
+    <Folder Include="appInventario\static\imagenes\" />
+    <Folder Include="appInventario\templates\" />
+    <Folder Include="appInventario\templates\appInventario\" />
+    <Folder Include="proyectoInventarioCoder\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="envProyCoder\">
+      <Id>envProyCoder</Id>
+      <Version>3.9</Version>
+      <Description>envProyCoder (Python 3.9 (32-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
