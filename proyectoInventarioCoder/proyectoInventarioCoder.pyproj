@@ -47,19 +47,23 @@
     <Compile Include="proyectoInventarioCoder\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="appInventario\static\css\estiloPagPrinc.css" />
-    <Content Include="appInventario\static\css\bootstrap.min.css" />
+    <Content Include="appInventario\static\appInventario\css\styles.css" />
+    <Content Include="appInventario\static\appInventario\css\bootstrap.min.css" />
+    <Content Include="appInventario\static\appInventario\js\funciones.js" />
+    <Content Include="appInventario\templates\appInventario\busquedaCategoria.html" />
+    <Content Include="appInventario\templates\appInventario\categoriaListado.html" />
     <Content Include="appInventario\templates\appInventario\paginaPadre.html" />
     <Content Include="appInventario\templates\appInventario\Inicio.html" />
+    <Content Include="appInventario\templates\appInventario\resultadoBusqueda.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="appInventario\" />
     <Folder Include="appInventario\migrations\" />
     <Folder Include="appInventario\static\" />
-    <Folder Include="appInventario\static\css\" />
-    <Folder Include="appInventario\static\js\" />
-    <Folder Include="appInventario\static\imagenes\" />
+    <Folder Include="appInventario\static\appInventario\css\" />
+    <Folder Include="appInventario\static\appInventario\js\" />
+    <Folder Include="appInventario\static\appInventario\" />
     <Folder Include="appInventario\templates\" />
     <Folder Include="appInventario\templates\appInventario\" />
     <Folder Include="proyectoInventarioCoder\" />

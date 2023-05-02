@@ -1,0 +1,21 @@
+{% extends "appInventario/paginaPadre.html" %}
+
+{% load static %}
+
+{% block cuadroContenido %}
+
+    <h1>Categorias</h1>
+
+    <ul>
+        <p> Estamos buscando la categoria: {{categoria}}</p>
+        {% if cursos %}
+        <ul>
+            {% for curso in cursos %}
+            <li>{{categoria.categNombre}}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </ul>
+
+{% endblock %}
+

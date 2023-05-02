@@ -1,0 +1,15 @@
+{% extends "appInventario/paginaPadre.html" %}
+
+{% load static %}
+
+{% block cuadroContenido %}
+
+    <h1>Categorias</h1>
+
+    <ul>
+        {% for p in contexto %}
+        <li>{{p.categNombre}}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

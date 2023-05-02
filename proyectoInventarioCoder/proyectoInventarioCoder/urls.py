@@ -19,10 +19,11 @@ Including another URLconf
 # Uncomment next two lines to enable admin:
 from django.contrib import admin
 from django.urls import path, include
-from appInventario import views
 
 urlpatterns = [
     # Uncomment the next line to enable the admin:
+    #path('', admin.site.urls),
     path('admin/', admin.site.urls),
-    path('appInventario/', include('appInventario.urls'))
+    #path('appInventario/', include('appInventario.urls'))
+    path('', include('appInventario.urls'))
 ]

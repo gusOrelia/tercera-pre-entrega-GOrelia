@@ -1,12 +1,13 @@
 from unittest.util import _MAX_LENGTH
 from django.db import models
 
-# Create your models here.
-
 class tablCategoria(models.Model):
     categNombre = models.CharField(max_length = 100)
     categDescrip = models.CharField(max_length = 300)
     categActivo = models.CharField(max_length = 2)
+
+    def __str__(self):
+        return f"Nombre: {self.categNombre} - Descripcion {self.categDescrip} - Activo: {self.categActivo}"
 
 class tablSubCategoria(models.Model):
     subCategNombre=models.CharField(max_length = 100)

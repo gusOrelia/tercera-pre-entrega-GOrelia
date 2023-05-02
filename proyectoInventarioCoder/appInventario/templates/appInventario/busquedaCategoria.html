@@ -1,0 +1,21 @@
+{% extends "appInventario/paginaPadre.html" %}
+
+{% load static %}
+
+{% block cuadroContenido %}
+
+    {% if miFormulario.errors %}
+
+    <p style="color: red;"> Estan mal los datos, revisalos</p>
+
+    {% endif %}
+
+    <form action="/appInventario/buscar/" method="get">
+
+        <input type="number" name="categoria" id="categoria">
+
+        <input type="submit" value="Buscar">
+
+    </form>
+
+{% endblock %}
